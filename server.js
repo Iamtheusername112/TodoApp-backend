@@ -15,7 +15,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("Connected to MongoDB"))
-  .catch(console.error);
+  .catch((err) => console.error("Error connecting to MongoDB:", err));
 
 // Models
 const Todo = require("./models/Todo");
